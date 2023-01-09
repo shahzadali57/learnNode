@@ -92,3 +92,4 @@ exports.deleteProduct = catchAsyncErrors( async (req, res, next) => {
         message: "product has been deleted"
     })
 })
+
