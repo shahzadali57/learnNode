@@ -65,5 +65,9 @@ return jwt.sign(
 }
 
 
+// Comparing Password
+userSchema.methods.comparePassword = async function(enterPassword){
+    return await bcrypt.compare(enterPassword,this.password);
+}
 
 module.exports = mongoose.model("user", userSchema)
