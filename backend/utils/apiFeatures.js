@@ -19,7 +19,7 @@ productName:{
         console.log(keyword)
 
 this.query = this.query.find({...keyword});
-return this;
+           return this;
     }
 
     filter(){
